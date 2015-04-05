@@ -26,8 +26,8 @@ yum install -y python3 python3-devel python3-pip
 pip2.7 install virtualenv wheel
 pip3.4 install wheel
 
-pip2.7 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1
-pip3.4 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1
+su - vagrant -c "pip2.7 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
+su - vagrant -c "pip3.4 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
 
 
 # Create vagrant pgsql superuser
