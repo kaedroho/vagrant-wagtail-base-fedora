@@ -2,7 +2,7 @@
 
 
 # Useful tools
-yum install -y vim git
+yum install -y vim git gcc gcc-c++
 
 # Dependencies for PIL
 yum install -y libjpeg-devel libtiff-devel zlib1g-devel libfreetype6-devel liblcms2-devel
