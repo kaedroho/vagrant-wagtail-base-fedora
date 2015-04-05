@@ -11,7 +11,8 @@ yum install -y libjpeg-devel libtiff-devel zlib1g-devel libfreetype6-devel liblc
 yum install -y redis
 
 # PostgreSQL
-yum install -y postgresql libpq-devel
+yum install -y postgresql postgresql-server libpq-devel
+postgresql-setup initdb
 
 # Java for Elasticsearch
 yum install -y openjdk-7-jre-headless
