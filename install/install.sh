@@ -16,33 +16,13 @@ yum install -y postgresql libpq-devel
 # Java for Elasticsearch
 yum install -y openjdk-7-jre-headless
 
-# Dependencies for Python
-yum install -y libssl-devel libncurses-devel liblzma-devel libgdbm-devel libsqlite3-devel libbz2-devel tk-devel libreadline6-dev
+# Python
+yum install -y python python-devel python-pip
+yum install -y python3 python3-devel python3-pip
 
-
-# Python 2.7
-curl https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz | tar xvz
-cd Python-2.7.9
-./configure
-make
-make install
-cd ..
-rm -rf Python-2.7.9
-
-python2 -m ensurepip
 
 pip2.7 install virtualenv
 pip2.7 install psycopg2==2.6 libsass==0.6.2 Pillow==2.7.0
-
-
-# Python 3.4
-curl https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz | tar xvz
-cd Python-3.4.3
-./configure
-make
-make install
-cd ..
-rm -rf Python-3.4.3
 
 pip3.4 install psycopg2==2.6 libsass==0.6.2 Pillow==2.7.0
 
