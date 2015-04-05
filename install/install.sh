@@ -9,10 +9,12 @@ yum install -y libjpeg-devel libtiff-devel zlib1g-devel libfreetype6-devel liblc
 
 # Redis
 yum install -y redis
+systemctl enable redis
 
 # PostgreSQL
 yum install -y postgresql postgresql-server libpq-devel
 postgresql-setup initdb
+systemctl enable postgresql
 
 # Java for Elasticsearch
 yum install -y java-1.8.0-openjdk-headless
@@ -41,6 +43,7 @@ echo "Downloading Elasticsearch..."
 wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.5.0.noarch.rpm
 yum install -y elasticsearch-1.5.0.noarch.rpm
 rm elasticsearch-1.5.0.noarch.rpm
+systemctl enable elasticsearch
 
 
 # Cleanup
