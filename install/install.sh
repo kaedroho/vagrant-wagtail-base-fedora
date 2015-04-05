@@ -1,25 +1,23 @@
 #!/bin/bash
 
-# Update APT database
-apt-get update -y
 
 # Useful tools
-apt-get install -y vim git curl gettext build-essential
+yum install -y vim git curl gettext build-essential
 
 # Dependencies for PIL
-apt-get install -y libjpeg-dev libtiff-dev zlib1g-dev libfreetype6-dev liblcms2-dev
+yum install -y libjpeg-dev libtiff-dev zlib1g-dev libfreetype6-dev liblcms2-dev
 
 # Redis
-apt-get install -y redis-server
+yum install -y redis-server
 
 # PostgreSQL
-apt-get install -y postgresql libpq-dev
+yum install -y postgresql libpq-dev
 
 # Java for Elasticsearch
-apt-get install -y openjdk-7-jre-headless
+yum install -y openjdk-7-jre-headless
 
 # Dependencies for Python
-apt-get install -y libssl-dev libncurses-dev liblzma-dev libgdbm-dev libsqlite3-dev libbz2-dev tk-dev libreadline6-dev
+yum install -y libssl-dev libncurses-dev liblzma-dev libgdbm-dev libsqlite3-dev libbz2-dev tk-dev libreadline6-dev
 
 
 # Python 2.7
@@ -67,7 +65,7 @@ rm elasticsearch-1.4.4.deb
 
 
 # Cleanup
-apt-get clean
+yum clean
 
 echo "Zeroing free space to improve compression..."
 dd if=/dev/zero of=/EMPTY bs=1M
