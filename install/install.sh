@@ -12,7 +12,7 @@ yum install -y redis
 systemctl enable redis
 
 # PostgreSQL
-yum install -y postgresql postgresql-server libpq-devel
+yum install -y postgresql postgresql-server postgresql-devel
 postgresql-setup initdb
 systemctl enable postgresql
 
