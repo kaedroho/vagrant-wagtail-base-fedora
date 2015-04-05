@@ -2,7 +2,7 @@
 
 
 # Useful tools
-yum install -y vim git curl gettext build-essential
+yum install -y vim git
 
 # Dependencies for PIL
 yum install -y libjpeg-dev libtiff-dev zlib1g-dev libfreetype6-dev liblcms2-dev
