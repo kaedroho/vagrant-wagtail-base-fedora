@@ -5,19 +5,19 @@
 yum install -y vim git
 
 # Dependencies for PIL
-yum install -y libjpeg-dev libtiff-dev zlib1g-dev libfreetype6-dev liblcms2-dev
+yum install -y libjpeg-devel libtiff-devel zlib1g-devel libfreetype6-devel liblcms2-devel
 
 # Redis
 yum install -y redis-server
 
 # PostgreSQL
-yum install -y postgresql libpq-dev
+yum install -y postgresql libpq-devel
 
 # Java for Elasticsearch
 yum install -y openjdk-7-jre-headless
 
 # Dependencies for Python
-yum install -y libssl-dev libncurses-dev liblzma-dev libgdbm-dev libsqlite3-dev libbz2-dev tk-dev libreadline6-dev
+yum install -y libssl-devel libncurses-devel liblzma-devel libgdbm-devel libsqlite3-devel libbz2-devel tk-devel libreadline6-dev
 
 
 # Python 2.7
