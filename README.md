@@ -7,7 +7,7 @@ A Vagrant box based on Fedora 21, with some extra software preinstalled to make 
 Contents
 --------
 
-This image is based on (chef/fedora-21)[https://atlas.hashicorp.com/chef/boxes/fedora-21]. It has the following extras installed:
+This image is based on [chef/fedora-21](https://atlas.hashicorp.com/chef/boxes/fedora-21). It has the following extras installed:
 
  - Python 2.7.8 with virtualenv and pip
  - Python 3.4.1 with pip (use bundled pyvenv for virtual environments)
