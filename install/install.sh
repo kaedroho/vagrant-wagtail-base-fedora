@@ -26,8 +26,13 @@ yum install -y python3 python3-devel python3-pip
 pip2.7 install virtualenv wheel
 pip3.4 install wheel
 
+# Prebuild psycopg2, libsass and Pillow
 su - vagrant -c "pip2.7 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
 su - vagrant -c "pip3.4 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
+
+
+# Tell PIP where to find wheel files
+echo "export PIP_FIND_LINKS=/home/vagrant/wheelhouse" >> /home/vagrant/.bashrc
 
 
 # Create vagrant pgsql superuser
