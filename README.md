@@ -1,5 +1,5 @@
-vagrant-wagtail-base (Fedora version)
-=====================================
+Wagtail base Vagrant box (Fedora version)
+=========================================
 
 A Vagrant box based on Fedora 21, with some extra software preinstalled to make developing projects with Wagtail easier and faster.
 
