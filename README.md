@@ -1,7 +1,7 @@
 vagrant-wagtail-base (Fedora version)
 =====================================
 
-A Vagrant box based on Fedora 22, with the dependencies for developing Wagtail
+A Vagrant box based on Fedora 21, with the dependencies for developing Wagtail
 sites preinstalled.
 
 
