@@ -36,6 +36,7 @@ echo "export PIP_FIND_LINKS=/home/vagrant/wheelhouse" >> /home/vagrant/.bashrc
 
 
 # Create vagrant pgsql superuser
+systemctl start postgresql
 su - postgres -c "createuser -s vagrant"
 
 
