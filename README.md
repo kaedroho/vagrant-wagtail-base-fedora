@@ -13,4 +13,4 @@ To generate the .box file:
 
 To install locally:
 
-    vagrant box add wagtail-base-v1.1.1 wagtail-base-v1.1.1.box
+    vagrant box add wagtail-base-fediora wagtail-base-fedora-v1.0.0.box
