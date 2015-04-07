@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Useful tools
 yum install -y vim git gcc gcc-c++
 
@@ -30,19 +29,15 @@ pip3.4 install wheel
 su - vagrant -c "pip2.7 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
 su - vagrant -c "pip3.4 wheel psycopg2==2.6 libsass==0.7.0 Pillow==2.8.1"
 
-
 # Tell PIP where to find wheel files
 echo "export PIP_FIND_LINKS=/home/vagrant/wheelhouse" >> /home/vagrant/.bashrc
-
 
 # Create vagrant pgsql superuser
 systemctl start postgresql
 su - postgres -c "createuser -s vagrant"
 
-
 # Install Fabric and Sphinx
 pip2.7 install Fabric==1.10.1 Sphinx==1.2.3
-
 
 # Elasticsearch
 echo "Downloading Elasticsearch..."
@@ -50,7 +45,6 @@ wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticse
 yum install -y elasticsearch-1.5.0.noarch.rpm
 rm elasticsearch-1.5.0.noarch.rpm
 systemctl enable elasticsearch
-
 
 # Cleanup
 yum clean
